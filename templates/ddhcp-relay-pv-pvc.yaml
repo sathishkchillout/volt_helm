@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: ddhcp-relay-volume
+  namespace: default
+spec:
+  storageClassName: manual
+  capacity:
+    storage: 2Gi
+  accessModes:
+    - ReadWriteMany
+  hostPath:
+    path: /home/ddhcp-relay/
+  persistentVolumeReclaimPolicy: Retain
+  claimRef:
+    namespace: default
+    name: ddhcp-relay-pvclaim
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: ddhcp-relay-pvclaim
+  namespace: default
+spec:
+  storageClassName: manual
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 1Gi
+
