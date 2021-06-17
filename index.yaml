@@ -1,0 +1,15 @@
+apiVersion: v1
+entries:
+  ddhcp-relay-docker-compose:
+  - apiVersion: v1
+    created: "2021-06-17T16:51:00.352182847+05:30"
+    description: A generated Helm Chart for ddhcp-relay-docker-compose from Skippbox
+      Kompose
+    digest: c092822e4018f3935d762b6d8426b9e3088812de8d96c1e72731dc17ce9435ab
+    keywords:
+    - ddhcp-relay-docker-compose
+    name: ddhcp-relay-docker-compose
+    urls:
+    - https://github.com/sathishkchillout/volt_helm/releases/download/ddhcp-relay-docker-compose-0.0.1/ddhcp-relay-docker-compose-0.0.1.tgz
+    version: 0.0.1
+generated: "2021-06-17T16:50:59.904886477+05:30"
